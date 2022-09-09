@@ -18,3 +18,23 @@
 
 .u-margin-top-big { margin-top: 8rem !important; }
 .u-margin-top-huge { margin-top: 10rem !important; }
+
+$sizes: (0,1,2,3,4,5, 10, 15, 20, 90);
+
+
+@each $i in $sizes {
+  .mb-#{$i} {
+      margin-bottom: #{$i / 4}rem;
+  }
+  .ml-#{$i} {
+      margin-left: #{$i / 4}rem;
+  }
+  .mr-#{$i} {
+      margin-right: #{$i / 4}rem;
+  }
+  .mt-#{$i} {
+      margin-top: #{$i / 4}rem;
+  }
+}
+
+
